@@ -1,0 +1,36 @@
+<!-- Modal Cadastrar -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel">CADASTRAR USUARIO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <form action="cadastro.php" method="post">
+                        <label class="form-label">E-MAIL</label>
+                        <input class="form-control" type="email" name="email" required autofocus placeholder="Digite o seu e-mail">
+                        <br>
+                        <label class="form-label">NOME</label>
+                        <input class="form-control" type="text" name="nome" required  placeholder="Digite o seu nome">
+                        <br>
+                        <label class="form-label">GÊNERO</label>
+                        <select class="form-select" id="floatingSelect" aria-label="Selecione um gênero" name="genero" required>
+                            <option style="color:gray;" disabled selected>Selecione um gênero</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <br>
+                        <label class="form-label">SENHA</label>
+                        <input class="form-control" type="password" name="senha" required  placeholder="**********">
+                        <br>
+                        <input type="submit" class="btn btn-purple" value="CADASTRAR">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">FECHAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
