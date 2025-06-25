@@ -1,3 +1,0 @@
-<a href="excluir.php?pos=<?= $i ?>"><?php if ($_SESSION['usuario'] != $_SESSION['emails'][$i]) {
-    echo '<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#editarModal" type="button">Excluir</button></a></t></td>';
-}} ?>
